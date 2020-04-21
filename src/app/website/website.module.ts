@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { WebsiteRoutingModule } from './website-routing.module';
 import { PrincipalComponent } from './principal/principal.component';
-
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { PrincipalComponent } from './principal/principal.component';
   ],
   imports: [
     CommonModule,
-    WebsiteRoutingModule
+    WebsiteRoutingModule,
+    CarouselModule.forRoot()
   ]
 })
 export class WebsiteModule { }
